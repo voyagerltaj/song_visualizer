@@ -1,0 +1,75 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  position:fixed;
+  z-index: 1;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.music_button {
+  position: fixed;
+  border: 2px solid ghostwhite;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: black;
+  color: ghostwhite;
+  opacity: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.active {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.active:hover {
+  background-color: ghostwhite;
+  color: black;
+  opacity: 100%;
+  size: 200%;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+#musicPlay {
+  top: 85%;
+  left: 50%;
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+}
+
+#musicPlay svg {
+  width: 90%;
+  height: 90%;
+}
+
+#customMusicUpload {
+  top: 95%;
+  left: 50%;
+  width: auto;
+  height:30px;
+  border-radius: 20%;
+}
+
+#customMusicUpload svg {
+  width: 80%;
+  height: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#customMusicUpload span {
+  font-family: 'Courier New', Courier, monospace;
+}
